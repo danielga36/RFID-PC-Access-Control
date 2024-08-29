@@ -1,3 +1,41 @@
+/*
+  RFID-Based PC Access Control System
+
+  Description:
+  This code implements an RFID-based access control system using an MFRC522 RFID reader and Arduino.
+  It authenticates users based on RFID card UIDs and performs actions such as logging in or locking/unlocking the PC.
+
+  Features:
+  - Reads and verifies RFID card UIDs
+  - Simulates keyboard inputs for PC login or lock/unlock
+  - Customizable UID and actions
+
+  Hardware Required:
+  - MFRC522 RFID reader
+  - Arduino board (e.g., Uno, Nano)
+  - Push button (for triggering actions)
+
+  Libraries Used:
+  - Keyboard.h
+  - SPI.h
+  - MFRC522.h
+
+  Connections:
+  - MFRC522 SDA: Pin 10
+  - MFRC522 RST: Pin 5
+  - Button: Pin 2
+
+  Author: danielga36
+  Date: 12/2/2021
+
+  License: GPL-3.0 license
+
+  Note:
+  Make sure to modify the 'card1' variable with your card's UID and adjust actions as needed.
+
+  For more information, visit: github.com/danielga36/RFID-PC-Access-Control
+*/
+
 #include <Keyboard.h>
 #include <SPI.h>
 #include <MFRC522.h>
